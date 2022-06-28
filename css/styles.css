@@ -14,6 +14,7 @@
   --background-btn: #f5f4fa;
   --portfolio-cl: #eeeeee;
   --header-cl: #ececec;
+  --icon-cl: #afb1b8;
   /* Змінні */
   --indent: 30px;
 }
@@ -168,6 +169,8 @@ img {
 }
 
 .header-contact {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -179,7 +182,11 @@ img {
 .header-contact:focus {
   color: var(--accent-cl);
 }
-
+/* Іконки Header */
+.header-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
 /* Cекція-Герой */
 .main-title {
   width: 696px;
@@ -265,6 +272,7 @@ img {
   margin-bottom: 10px;
 }
 .text-team {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -275,6 +283,62 @@ img {
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
+/* Оформлення іконок */
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+.social-media-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--icon-cl);
+  border-radius: 50%;
+}
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: var(--accent-cl);
+  color: var(--white-cl);
+}
+.social-media-icon {
+  fill: currentColor;
+}
+/* Cекція Regulars */
+.regulars-list {
+  display: flex;
+  justify-content: center;
+}
+.regulars-item {
+  padding: 16px, 32px;
+  border: 1px solid var(--icon-cl);
+  border-radius: 4px;
+}
+.regulars-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.regulars-item:hover,
+.regulars-item:focus {
+  color: var(--accent-cl);
+  border-color: var(--accent-cl);
+}
+.regulars-logo {
+  fill: currentColor;
+}
+.logo-list {
+  color: var(--icon-cl);
+}
+.logo-list:hover,
+.logo-list:focus {
+  color: var(--accent-cl);
+  border-color: var(--accent-cl);
+}
+
 /* Футер */
 .page-footer {
   background: var(--hero-footer-bg-cl);
@@ -304,6 +368,13 @@ img {
 .footer-address:hover,
 .footer-address:focus {
   color: var(--accent-cl);
+}
+.footer-item {
+  display: flex;
+}
+.section-footer {
+  font-weight: 700;
+  color: var(--white-cl);
 }
 /* Сторінка Портфоліо */
 
