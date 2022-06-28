@@ -202,6 +202,14 @@ img {
 }
 .hero {
   background-color: var(--hero-footer-bg-cl);
+  background-image: url(../images/hero/overlay.png),
+    url(../images/hero/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -234,6 +242,19 @@ img {
 }
 .benefits-list {
   display: flex;
+}
+.benefits-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-btn);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.benefits-icon {
+  fill: currentColor;
 }
 /* cекція about */
 .about {
@@ -314,7 +335,11 @@ img {
   justify-content: center;
 }
 .regulars-item {
-  padding: 16px, 32px;
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--icon-cl);
   border-radius: 4px;
 }
@@ -351,6 +376,12 @@ img {
   letter-spacing: 0.03em;
   font-style: normal;
 }
+.footer-box {
+  display: flex;
+}
+.footer-item-adress {
+  margin-right: 156px;
+}
 .footer-address-link {
   color: var(--white-cl);
 }
@@ -369,13 +400,38 @@ img {
 .footer-address:focus {
   color: var(--accent-cl);
 }
-.footer-item {
+.footer-item-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--white-cl);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.footer-item-link:hover,
+.footer-item-link:focus {
+  background-color: var(--accent-cl);
 }
 .section-footer {
   font-weight: 700;
   color: var(--white-cl);
+  margin-bottom: 20px;
 }
+.footer-social {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.social-media-icon {
+  fill: currentColor;
+}
+.join-box {
+  display: flex;
+}
+
 /* Сторінка Портфоліо */
 
 /* Заголовки */
